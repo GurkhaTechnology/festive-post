@@ -1,0 +1,13 @@
+
+[
+  {
+    "name": "Festive Christmas",
+    "thumbnail": "templates/template1.png",
+    "path": "templates/template1.png"
+  },
+  {
+    "name": "Happy New Year",
+    "thumbnail": "templates/template2.png",
+    "path": "templates/template2.png"
+  }
+]
