@@ -1,0 +1,1 @@
+function initializeDownloadHandler(e,t,n){t.addEventListener("click",()=>{const t=n.value;e.toBlob(e=>{const n=URL.createObjectURL(e),o=document.createElement("a");o.href=n,o.download=`festive-post.${t}`,o.click(),URL.revokeObjectURL(n)},`image/${t}`,1)})}export{initializeDownloadHandler};

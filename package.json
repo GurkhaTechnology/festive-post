@@ -1,0 +1,30 @@
+{
+  "name": "festive-post",
+  "version": "1.0.0",
+  "description": "This is a fully client-side web application that allows users to create festive posts for their businesses. Users can upload their logo, enter their company name, select a brand color, and choose from a variety of festive templates to generate a social media-ready post.",
+  "main": "script.js",
+  "scripts": {
+    "build": "npm run build:css && npm run build:js && npm run copy:assets",
+    "build:css": "css-minify -f style.css -o dist",
+    "build:js": "terser script.js -o dist/script.js -c -m && terser js/downloadHandler.js -o dist/js/downloadHandler.js -c -m && terser js/imageControls.js -o dist/js/imageControls.js -c -m && terser js/saveLoadHandler.js -o dist/js/saveLoadHandler.js -c -m && terser js/templateHandler.js -o dist/js/templateHandler.js -c -m && terser js/textControls.js -o dist/js/textControls.js -c -m",
+    "copy:assets": "cmd /c copy-assets.bat",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GurkhaTechnology/festive-post.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/GurkhaTechnology/festive-post/issues"
+  },
+  "homepage": "https://github.com/GurkhaTechnology/festive-post#readme",
+  "devDependencies": {
+    "css-minify": "^2.1.0",
+    "gh-pages": "^6.3.0",
+    "terser": "^5.43.1"
+  }
+}

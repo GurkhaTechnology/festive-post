@@ -21,12 +21,21 @@ The Festive Post Generator is a client-side web application built with HTML, CSS
 |-- index.html
 |-- style.css
 |-- script.js
+|-- js/
+|   |-- downloadHandler.js
+|   |-- imageControls.js
+|   |-- saveLoadHandler.js
+|   |-- templateHandler.js
+|   `-- textControls.js
 |-- templates/
 |   |-- template1.png
 |   |-- ...
 |   `-- templates.json
 |-- assets/
 |   `-- logo-placeholder.png
+|-- dist/
+|-- build/
+|-- CONTRIBUTING.md
 |-- README.md
 |-- CHANGELOG.md
 |-- PLAN.md
@@ -36,8 +45,17 @@ The Festive Post Generator is a client-side web application built with HTML, CSS
 - **`index.html`**: The main entry point of the application.
 - **`style.css`**: Contains all the styles for the application.
 - **`script.js`**: The core JavaScript file where all the application logic resides.
+- **`js/`**: This directory contains the JavaScript modules.
+    - **`downloadHandler.js`**: Handles downloading the final post.
+    - **`imageControls.js`**: Handles logo uploading, drag and drop, and opacity.
+    - **`saveLoadHandler.js`**: Handles saving and loading designs.
+    - **`templateHandler.js`**: Handles loading and displaying templates.
+    - **`textControls.js`**: Handles all text-related controls and canvas interactions.
 - **`templates/`**: This directory holds the template images and the `templates.json` file.
 - **`assets/`**: Contains static assets like the placeholder logo.
+- **`dist/`**: This directory contains the minified files for production.
+- **`build/`**: This directory contains the build scripts.
+- **`CONTRIBUTING.md`**: Guidelines for contributing to the project.
 - **`README.md`**: A general overview of the project.
 - **`CHANGELOG.md`**: A log of all changes made to the project.
 - **`PLAN.md`**: The development plan for future features and improvements.
